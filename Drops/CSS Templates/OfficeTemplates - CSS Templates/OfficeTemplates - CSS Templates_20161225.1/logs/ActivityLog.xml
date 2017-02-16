@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="ActivityLog.xsl"?>
+<BuildInformation>
+  <BuildInformationNode Id="dcdba63b-2dba-409c-bdb2-d19f7a1e20f7" Type="ActivityTracking">
+  <Fields>
+    <InformationField Name="ActivityInstanceId" Value="1" />
+    <InformationField Name="ActivityType" Value="DynamicActivity" />
+    <InformationField Name="DisplayName" Value="Overall Build Process" />
+    <InformationField Name="Duration" Value="00:01:31" />
+    <InformationField Name="State" Value="Canceled" />
+    <InformationField Name="StartTime" Value="2016-12-25T16:00:25.5699510Z" />
+    <InformationField Name="FinishTime" Value="2016-12-25T16:01:56.7124988Z" />
+  </Fields>
+<Children><BuildInformationNode Id="5116294f-a4c2-46da-97ca-27a53f9703f1" ParentId="dcdba63b-2dba-409c-bdb2-d19f7a1e20f7" Type="ActivityTracking">
+  <Fields>
+    <InformationField Name="ActivityInstanceId" Value="3" />
+    <InformationField Name="ActivityType" Value="GetBuildDetail" />
+    <InformationField Name="DisplayName" Value="Get the Build" />
+    <InformationField Name="Duration" Value="00:00:00" />
+    <InformationField Name="State" Value="Closed" />
+    <InformationField Name="StartTime" Value="2016-12-25T16:00:25.6637007Z" />
+    <InformationField Name="FinishTime" Value="2016-12-25T16:00:25.6637007Z" />
+  </Fields>
+<Children /></BuildInformationNode><BuildInformationNode Id="912f7d2b-0ebf-4321-bb60-979c80d897aa" ParentId="dcdba63b-2dba-409c-bdb2-d19f7a1e20f7" Type="ActivityTracking">
+  <Fields>
+    <InformationField Name="ActivityInstanceId" Value="4" />
+    <InformationField Name="ActivityType" Value="Sequence" />
+    <InformationField Name="DisplayName" Value="Update Drop Location" />
+    <InformationField Name="Duration" Value="00:00:00" />
+    <InformationField Name="State" Value="Closed" />
+    <InformationField Name="StartTime" Value="2016-12-25T16:00:25.6793260Z" />
+    <InformationField Name="FinishTime" Value="2016-12-25T16:00:25.7730811Z" />
+  </Fields>
+<Children><BuildInformationNode Id="4b032545-d95e-4bf5-bf3a-aaff320a0340" ParentId="912f7d2b-0ebf-4321-bb60-979c80d897aa" Type="ActivityTracking">
+  <Fields>
+    <InformationField Name="ActivityInstanceId" Value="11" />
+    <InformationField Name="ActivityType" Value="UpdateBuildNumber" />
+    <InformationField Name="DisplayName" Value="Update Build Number" />
+    <InformationField Name="Duration" Value="00:00:00" />
+    <InformationField Name="State" Value="Closed" />
+    <InformationField Name="StartTime" Value="2016-12-25T16:00:25.6793260Z" />
+    <InformationField Name="FinishTime" Value="2016-12-25T16:00:25.7262058Z" />
+  </Fields>
+<Children><BuildInformationNode Id="71364f40-c14f-404d-80fd-4893f11e92e7" ParentId="4b032545-d95e-4bf5-bf3a-aaff320a0340" Type="ActivityInput">
+  <Fields>
+    <InformationField Name="BuildNumberFormat" Value="$(BuildDefinitionName)_$(Date:yyyyMMdd)$(Rev:.r)" />
+  </Fields>
+<Children /></BuildInformationNode><BuildInformationNode Id="99eb89c1-2331-4d0f-9363-8254b3bff8a6" ParentId="4b032545-d95e-4bf5-bf3a-aaff320a0340" Type="ActivityOutput">
+  <Fields>
+    <InformationField Name="Result" Value="OfficeTemplates - CSS Templates_20161225.1" />
+  </Fields>
+<Children /></BuildInformationNode></Children></BuildInformationNode><BuildInformationNode Id="fa1fd33a-a039-4fd2-90a7-b1fc30ccdb05" ParentId="912f7d2b-0ebf-4321-bb60-979c80d897aa" Type="ActivityTracking">
+  <Fields>
+    <InformationField Name="ActivityInstanceId" Value="12" />
+    <InformationField Name="ActivityType" Value="If" />
+    <InformationField Name="DisplayName" Value="If Build Reason is Triggered" />
+    <InformationField Name="Duration" Value="00:00:00" />
+    <InformationField Name="State" Value="Closed" />
+    <InformationField Name="StartTime" Value="2016-12-25T16:00:25.7418249Z" />
+    <InformationField Name="FinishTime" Value="2016-12-25T16:00:25.7730811Z" />
+  </Fields>
+<Children><BuildInformationNode Id="12adae42-0cff-493d-891a-94de7de64191" ParentId="fa1fd33a-a039-4fd2-90a7-b1fc30ccdb05" Type="ActivityTracking">
+  <Fields>
+    <InformationField Name="ActivityInstanceId" Value="15" />
+    <InformationField Name="ActivityType" Value="SetBuildProperties" />
+    <InformationField Name="DisplayName" Value="Set Drop Location" />
+    <InformationField Name="Duration" Value="00:00:00" />
+    <InformationField Name="State" Value="Closed" />
+    <InformationField Name="StartTime" Value="2016-12-25T16:00:25.7574519Z" />
+    <InformationField Name="FinishTime" Value="2016-12-25T16:00:25.7730811Z" />
+  </Fields>
+<Children><BuildInformationNode Id="aeef060d-ce52-4029-b02e-b7224c0d93bc" ParentId="12adae42-0cff-493d-891a-94de7de64191" Type="ActivityInput">
+  <Fields>
+    <InformationField Name="LabelName" />
+    <InformationField Name="SourceGetVersion" />
+    <InformationField Name="KeepForever" Value="False" />
+    <InformationField Name="DropLocation" Value="$/Dot Net/Drops/CSS Templates/OfficeTemplates - CSS Templates/OfficeTemplates - CSS Templates_20161225.1" />
+    <InformationField Name="Status" Value="None" />
+    <InformationField Name="LogLocation" />
+    <InformationField Name="BuildNumber" />
+    <InformationField Name="Quality" />
+    <InformationField Name="TestStatus" Value="Unknown" />
+    <InformationField Name="CompilationStatus" Value="Unknown" />
+  </Fields>
+<Children /></BuildInformationNode></Children></BuildInformationNode><BuildInformationNode Id="7c118844-1067-439f-9bd4-0beac2fcc0a5" ParentId="fa1fd33a-a039-4fd2-90a7-b1fc30ccdb05" Type="ActivityInput">
+  <Fields>
+    <InformationField Name="Condition" Value="True" />
+  </Fields>
+<Children /></BuildInformationNode></Children></BuildInformationNode><BuildInformationNode Id="d9a61da6-ce88-47b4-9992-5a23b35f07ff" ParentId="912f7d2b-0ebf-4321-bb60-979c80d897aa" Type="ActivityTracking">
+  <Fields>
+    <InformationField Name="ActivityInstanceId" Value="16" />
+    <InformationField Name="ActivityType" Value="If" />
+    <InformationField Name="DisplayName" Value="If Build Reason is ValidateShelveset" />
+    <InformationField Name="Duration" Value="00:00:00" />
+    <InformationField Name="State" Value="Closed" />
+    <InformationField Name="StartTime" Value="2016-12-25T16:00:25.7730811Z" />
+    <InformationField Name="FinishTime" Value="2016-12-25T16:00:25.7730811Z" />
+  </Fields>
+<Children><BuildInformationNode Id="4797b545-a2dd-4a8f-a3a6-33f92b9d4e75" ParentId="d9a61da6-ce88-47b4-9992-5a23b35f07ff" Type="ActivityInput">
+  <Fields>
+    <InformationField Name="Condition" Value="False" />
+  </Fields>
+<Children /></BuildInformationNode></Children></BuildInformationNode></Children></BuildInformationNode><BuildInformationNode Id="9c70c5f4-1c58-4093-89ea-821d145def15" ParentId="dcdba63b-2dba-409c-bdb2-d19f7a1e20f7" Type="ActivityInput">
+  <Fields>
+    <InformationField Name="MSBuildMultiProc" Value="True" />
+    <InformationField Name="Verbosity" Value="Normal" />
+    <InformationField Name="CreateWorkItem" Value="True" />
+    <InformationField Name="SourceAndSymbolServerSettings" Value="Index Sources" />
+    <InformationField Name="RunCodeAnalysis" Value="AsConfigured" />
+    <InformationField Name="SolutionSpecificBuildOutputs" Value="False" />
+    <InformationField Name="TestSpecs" Value="Run tests in assemblies matching **\*test*.dll using settings from $/Dot Net/CSS Templates/Main/src/OfficeTemplates/Local.testsettings" />
+    <InformationField Name="AgentSettings" Value="Use agent where Name=* and Tags is empty; Max Wait Time: 04:00:00" />
+    <InformationField Name="MSBuildPlatform" Value="Auto" />
+    <InformationField Name="PrivateDropLocation" />
+    <InformationField Name="MSBuildArguments" />
+    <InformationField Name="CreateLabel" Value="True" />
+    <InformationField Name="AssociateChangesetsAndWorkItems" Value="True" />
+    <InformationField Name="GetVersion" />
+    <InformationField Name="CleanWorkspace" Value="All" />
+    <InformationField Name="PerformTestImpactAnalysis" Value="True" />
+    <InformationField Name="BuildSettings" Value="Build $/Dot Net/CSS Templates/Main/src/OfficeTemplates/OfficeTemplates.sln with default platform and configuration" />
+    <InformationField Name="BuildNumberFormat" Value="$(BuildDefinitionName)_$(Date:yyyyMMdd)$(Rev:.r)" />
+    <InformationField Name="DisableTests" Value="False" />
+  </Fields>
+<Children /></BuildInformationNode><BuildInformationNode Id="e77a4ae6-a6cc-4d68-9cac-2a2b60ce9d93" ParentId="dcdba63b-2dba-409c-bdb2-d19f7a1e20f7" Type="AgentScopeActivityTracking">
+  <Fields>
+    <InformationField Name="ReservationStatus" Value="AgentReleased" />
+    <InformationField Name="ReservedAgentUri" Value="vstfs:///Build/Agent/521" />
+    <InformationField Name="ReservedAgentName" Value="Hosted Build Agent" />
+    <InformationField Name="ActivityInstanceId" Value="17" />
+    <InformationField Name="ActivityType" Value="AgentScope" />
+    <InformationField Name="DisplayName" Value="Run On Agent" />
+    <InformationField Name="Duration" Value="00:01:30" />
+    <InformationField Name="State" Value="Canceled" />
+    <InformationField Name="StartTime" Value="2016-12-25T16:00:25.7730811Z" />
+    <InformationField Name="FinishTime" Value="2016-12-25T16:01:56.7124988Z" />
+    <InformationField Name="PossibleAgents" Value="vstfs:///Build/Agent/521=Hosted Build Agent" />
+  </Fields>
+<Children><BuildInformationNode Id="a30e2581-585d-47e6-ae4a-d5b17bd26d92" ParentId="e77a4ae6-a6cc-4d68-9cac-2a2b60ce9d93" Type="ActivityInput">
+  <Fields>
+    <InformationField Name="MaxWaitTime" Value="04:00:00" />
+    <InformationField Name="MaxExecutionTime" Value="00:00:00" />
+    <InformationField Name="ReservationSpec" Value="Name=*, Tags=" />
+  </Fields>
+<Children /></BuildInformationNode><BuildInformationNode Id="62a7ca33-d217-4a70-9865-336a03039a8d" ParentId="e77a4ae6-a6cc-4d68-9cac-2a2b60ce9d93" Type="ActivityOutput">
+  <Fields>
+    <InformationField Name="Result" Value="Hosted Build Agent (vstfs:///Build/Agent/521)" />
+  </Fields>
+<Children /></BuildInformationNode></Children></BuildInformationNode></Children></BuildInformationNode>
+</BuildInformation>
